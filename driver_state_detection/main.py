@@ -7,7 +7,7 @@ import numpy as np
 
 from attention_scorer import AttentionScorer as AttScorer
 from eye_detector import EyeDetector as EyeDet
-from parser import get_args
+from custom_parser import get_args
 from pose_estimation import HeadPoseEstimator as HeadPoseEst
 from utils import get_landmarks, load_camera_parameters
 
