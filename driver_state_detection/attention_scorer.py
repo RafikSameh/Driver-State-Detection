@@ -21,9 +21,9 @@ class AttentionScorer:
         roll_thresh=60,
         pitch_thresh=20,
         yaw_thresh=30,
-        ear_time_thresh=4.0,
-        gaze_time_thresh=2.0,
-        pose_time_thresh=4.0,
+        ear_time_thresh=1.0,
+        gaze_time_thresh=1.0,
+        pose_time_thresh=1.0,
         verbose=False,
     ):
         """
