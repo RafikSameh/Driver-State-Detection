@@ -79,7 +79,13 @@ def main():
     )
 
     # capture the input from the default system camera (camera number 0)
-    cap = cv2.VideoCapture(args.camera)
+    # cap = cv2.VideoCapture(args.camera)
+
+    # Replace with your local machine's IP address
+    stream_url = 'http://192.168.1.10:5000/video'
+
+    cap = cv2.VideoCapture(stream_url)
+
     if not cap.isOpened():  # if the camera can't be opened exit the program
         print("Cannot open camera")
         exit()
