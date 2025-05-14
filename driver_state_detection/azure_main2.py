@@ -242,7 +242,23 @@ def main():
         log_file.write(f"{time.asctime(time.localtime(time.time()))}\n")
         log_file.write("Distraction events:\n")
         log_file.write("================\n")
+        # Set up the Azure Face API request
+    headers = {
+        'Ocp-Apim-Subscription-Key': FACE_KEY,
+        'Content-Type': 'application/octet-stream'
+    }
     
+    # Make sure endpoint doesn't have trailing slash for direct API calls
+    face_endpoint = FACE_ENDPOINT
+    if face_endpoint.endswith('/'):
+        face_endpoint = face_endpoint[:-1]
+    
+    # Azure Face API parameters
+    face_api_params = {
+        'returnFaceLandmarks': 'true',
+        'returnFaceAttributes': 'headPose,glasses,occlusion',
+        'detectionModel': 'detection_01'
+    }
     try:
         while True:
             # Get current time in seconds
