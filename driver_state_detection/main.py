@@ -82,7 +82,7 @@ def main():
     # cap = cv2.VideoCapture(args.camera)
 
     # Replace with your local machine's IP address
-    stream_url = 'http://192.168.1.10:5000/video'
+    stream_url = 'http://localhost:7070/stream'
 
     cap = cv2.VideoCapture(stream_url)
 
@@ -297,6 +297,7 @@ def main():
                         1,
                         cv2.LINE_AA,
                     )
+                    print(state_message)
                     if distraction_start_time is None:
                         # Start tracking distraction time
                         distraction_start_time = time.time()
@@ -373,11 +374,11 @@ def main():
                 )'''
 
             # show the frame on screen
-            cv2.imshow("Press 'q' to terminate", frame)
+#            cv2.imshow("Press 'q' to terminate", frame)
 
             # if the key "q" is pressed on the keyboard, the program is terminated
-            if cv2.waitKey(20) & 0xFF == ord("q"):
-                break
+ #           if cv2.waitKey(20) & 0xFF == ord("q"):
+  #              break
     except KeyboardInterrupt:
         print("Program terminated by user")
         
