@@ -389,6 +389,9 @@ def main():
     with open(log_file_path, "a") as log_file:
         log_file.write("================\n")
         log_file.write("\nTotal Distraction Time: {:.2f} seconds\n".format(total_distraction_time))
+    # Run the Azure script after logging
+    import subprocess
+    subprocess.run(["bash", "azureScript.sh"], check=True)
     return
 
 
