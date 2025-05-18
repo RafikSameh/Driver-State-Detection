@@ -1,0 +1,45 @@
+
+Distraction Log
+Wed May 14 22:52:58 2025
+Distraction events:
+================
+
+Distraction Log
+Wed May 14 22:53:21 2025
+Distraction events:
+================
+
+Distraction Log
+Wed May 14 22:54:05 2025
+Distraction events:
+================
+DISTRACTED from 22:54:27 to 22:54:28 Duration: 1.42 seconds
+LOOKING AWAY from 22:54:32 to 22:54:33 Duration: 0.87 seconds
+DISTRACTED from 22:54:34 to 22:54:40 Duration: 6.21 seconds
+DISTRACTED from 22:54:45 to 22:54:45 Duration: 0.37 seconds
+DISTRACTED from 22:54:49 to 22:54:56 Duration: 6.76 seconds
+================
+
+Total Distraction Time: 15.62 seconds
+
+Distraction Log
+Sun May 18 15:25:12 2025
+Distraction events:
+================
+DISTRACTED from 15:25:16 to 15:25:20 Duration: 3.94 seconds
+DISTRACTED from 15:25:29 to 15:25:36 Duration: 7.01 seconds
+DISTRACTED from 15:25:45 to 15:25:48 Duration: 3.07 seconds
+DISTRACTED from 15:25:54 to 15:26:16 Duration: 22.12 seconds
+DISTRACTED from 15:26:28 to 15:26:50 Duration: 22.2 seconds
+================
+
+Total Distraction Time: 58.34 seconds
+
+Distraction Log
+Sun May 18 15:44:43 2025
+Distraction events:
+================
+DISTRACTED from 15:44:56 to 15:45:04 Duration: 7.95 seconds
+================
+
+Total Distraction Time: 7.95 seconds
