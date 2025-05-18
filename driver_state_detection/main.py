@@ -82,8 +82,8 @@ def main():
     # cap = cv2.VideoCapture(args.camera)
 
     # Replace with your local machine's IP address
-    stream_url = 'http://localhost:7070/stream'
-
+    #stream_url = 'http://localhost:7070/stream'
+    stream_url = 'http://192.168.1.10:5000/video'
     cap = cv2.VideoCapture(stream_url)
 
     if not cap.isOpened():  # if the camera can't be opened exit the program
