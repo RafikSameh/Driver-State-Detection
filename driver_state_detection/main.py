@@ -83,8 +83,8 @@ def main():
 
     # Replace with your local machine's IP address
     #stream_url = 'http://localhost:7070/stream'
-    stream_url = 'http://192.168.1.10:5000/video'
-    cap = cv2.VideoCapture(stream_url)
+    stream_url = 'http://localhost:5000/video'
+    cap = cv2.VideoCapture(0)
 
     if not cap.isOpened():  # if the camera can't be opened exit the program
         print("Cannot open camera")
@@ -96,13 +96,24 @@ def main():
     distraction_start_time = None
     total_distraction_time = 0
     log_file_path = "distraction_log.txt"
-
+    #####################################
+    log_counter_file_path = "counters.txt"
+    # Open the log file in write mode to clear previous logs
+    with open(log_counter_file_path, "a") as log_file:
+        log_file.write("\nDistraction Log counters for trip:")
+        log_file.write(f"{time.asctime(time.localtime(time.time()))}\n")
+        log_file.write("================\n") 
+    safe_counter = 0
+    critical_counter = 0
+    #####################################
     # Open the log file in write mode to clear previous logs
     with open(log_file_path, "a") as log_file:
         log_file.write("\nDistraction Log\n")
         log_file.write(f"{time.asctime(time.localtime(time.time()))}\n")
         log_file.write("Distraction events:\n")
         log_file.write("================\n")   
+    
+    
     try:
         while True:  # infinite loop for webcam video capture
 
@@ -306,6 +317,12 @@ def main():
                         # End tracking distraction time
                         distraction_end_time = time.time()
                         distraction_duration = distraction_end_time - distraction_start_time
+                        #############################
+                        if distraction_duration > 2 and distraction_duration < 5:
+                            safe_counter=safe_counter+1
+                        elif distraction_duration > 5:
+                            critical_counter=critical_counter+1
+                        #############################
                         total_distraction_time += distraction_duration
                         # Log the distraction event
                         with open(log_file_path, "a") as log_file:
@@ -386,12 +403,17 @@ def main():
     cap.release()
     cv2.destroyAllWindows()
     # After the loop, log the total distraction time
+    ########################################
+    with open(log_counter_file_path, "a") as log_counter_file:
+        log_counter_file.write( f"Safe Distraction times (2-5 seconds) : {safe_counter}\n")
+        log_counter_file.write( f"Critical Distraction times (>5 seconds) : {critical_counter}\n")
+    #########################################                    
     with open(log_file_path, "a") as log_file:
         log_file.write("================\n")
         log_file.write("\nTotal Distraction Time: {:.2f} seconds\n".format(total_distraction_time))
     # Run the Azure script after logging
-    import subprocess
-    subprocess.run(["bash", "azureScript.sh"], check=True)
+    '''import subprocess
+    subprocess.run(["bash", "azureScript.sh"], check=True)'''
     return
 
 

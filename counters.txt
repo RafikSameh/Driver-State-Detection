@@ -1,0 +1,5 @@
+
+Distraction Log counters for trip:Mon May 26 23:17:27 2025
+================
+Safe Distraction times (2-5 seconds) : 0
+Critical Distraction times (>5 seconds) : 3

@@ -70,3 +70,61 @@ Distraction events:
 ================
 
 Total Distraction Time: 0.00 seconds
+
+Distraction Log
+Sun May 25 11:50:36 2025
+Distraction events:
+================
+DISTRACTED from 08:50:57 to 08:50:58 Duration: 1.15 seconds
+DISTRACTED from 08:51:01 to 08:51:03 Duration: 1.34 seconds
+DISTRACTED from 08:51:16 to 08:51:17 Duration: 0.48 seconds
+DISTRACTED from 08:51:24 to 08:51:30 Duration: 5.99 seconds
+================
+
+Total Distraction Time: 8.96 seconds
+
+Distraction Log
+Sun May 25 11:59:05 2025
+Distraction events:
+================
+DISTRACTED from 08:59:13 to 08:59:15 Duration: 2.35 seconds
+DISTRACTED from 08:59:21 to 08:59:26 Duration: 5.18 seconds
+DISTRACTED from 08:59:35 to 08:59:35 Duration: 0.24 seconds
+LOOKING AWAY from 08:59:40 to 08:59:45 Duration: 4.56 seconds
+================
+
+Total Distraction Time: 12.33 seconds
+
+Distraction Log
+Mon May 26 23:11:47 2025
+Distraction events:
+================
+LOOKING AWAY from 20:12:03 to 20:12:03 Duration: 0.24 seconds
+DISTRACTED from 20:12:08 to 20:12:17 Duration: 8.68 seconds
+DISTRACTED from 20:12:21 to 20:12:23 Duration: 1.34 seconds
+================
+
+Total Distraction Time: 10.26 seconds
+
+Distraction Log
+Mon May 26 23:15:27 2025
+Distraction events:
+================
+DISTRACTED from 20:15:38 to 20:15:44 Duration: 6.43 seconds
+LOOKING AWAY from 20:15:52 to 20:15:52 Duration: 0.21 seconds
+DISTRACTED from 20:15:59 to 20:15:59 Duration: 0.05 seconds
+DISTRACTED from 20:16:05 to 20:16:05 Duration: 0.36 seconds
+================
+
+Total Distraction Time: 7.04 seconds
+
+Distraction Log
+Mon May 26 23:17:27 2025
+Distraction events:
+================
+DISTRACTED from 20:17:39 to 20:17:45 Duration: 6.47 seconds
+DISTRACTED from 20:17:50 to 20:17:57 Duration: 6.72 seconds
+DISTRACTED from 20:18:02 to 20:18:13 Duration: 11.29 seconds
+================
+
+Total Distraction Time: 24.49 seconds
